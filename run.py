@@ -36,7 +36,7 @@ print(r"""
  /_/    \_\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|
  """)
 
-print(fr"""{Fore.CYAN}
+print(fr"""{Fore.RED}
     .--.                   .---.
 
    .---|__|           .-.     |~~~|
@@ -79,6 +79,10 @@ def story_begins():
     typewriter("a wizard. The wizard has been hurt in a battle to bring \n")
     typewriter("magic back to the land. The wizard senses your powers \n")
     typewriter("growing and gives you his powers.")
+    print()
+
+
+answer = input("Do you accept the wizard's gift? (Y/N)")
 
 
 story_begins()
