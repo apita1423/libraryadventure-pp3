@@ -15,6 +15,50 @@ def typewriter(effect):
         time.sleep(0.1)
 
 
+# ASCII art and title 
+print(r"""
+  _      _ _                 
+ | |    (_) |                    
+ | |     _| | _  _ __ __ _ _ __ _   _ 
+ | |    | | '_ \| '__/ _` | '__| | | |
+ | |____| | |_) | | | (_| | |  | |_| |
+ |______|_|_.__/|_|  \__,_|_|   \__, |
+                                 __/ |
+                                |___/ 
+""")
+
+print(r"""
+              _                 _                  
+     /\      | |               | |                 
+    /  \   __| |_   _____ _ __ | |_ _   _ _ __ ___ 
+   / /\ \ / _` \ \ / / _ \ '_ \| __| | | | '__/ _ \
+  / ____ \ (_| |\ V /  __/ | | | |_| |_| | | |  __/
+ /_/    \_\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|
+ """)
+
+print(r"""
+       .--.                   .---.
+
+   .---|__|           .-.     |~~~|
+
+.--|===|--|_          |_|     |~~~|--.
+
+|  |===|  |'\     .---!~|  .--|   |--|
+
+|%%|   |  |.'\    |===| |--|%%|   |  |
+
+|%%|   |  |\.'\   |   | |__|  |   |  |
+
+|  |   |  | \  \  |===| |==|  |   |  |
+
+|  |   |__|  \.'\ |   |_|__|  |~~~|__|
+
+|  |===|--|   \.'\|===|~|--|%%|~~~|--|
+
+^--^---'--^    `-'`---^-^--^--^---'--' hjw
+""")
+
+
 # the library needs to know your name
 name = input("Please enter your name: ").capitalize().strip()
 print(f"Welcome to the library {name}! Hope you find something special.")
@@ -27,7 +71,10 @@ def story_begins():
     typewriter("that it's a magical book, and that it has picked you for a \n")
     typewriter("reason. You decide to sit down and begin to read the book. \n")
     typewriter("As you read the book, the library starts to disappear. \n")
-    typewriter("You find yourself in a magical land and fact-to-face with \n")
+    typewriter("You find yourself in a magical land and face-to-face with \n")
     typewriter("a wizard. The wizard has been hurt in a battle to bring \n")
     typewriter("magic back to land. The wizard senses your powers growing \n")
     typewriter("gives you his powers.")
+
+
+story_begins()
