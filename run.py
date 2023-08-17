@@ -79,10 +79,40 @@ def story_begins():
     typewriter("a wizard. The wizard has been hurt in a battle to bring \n")
     typewriter("magic back to the land. The wizard senses your powers \n")
     typewriter("growing and gives you his powers.")
+    start_adventure()
     print()
 
 
-answer = input("Do you accept the wizard's gift? (Y/N)")
+def start_adventure():
+    print()
+    typewriter("Do you accept the wizard's gift? (Y/N) ")
+    print()
+    while True:
+        print()
+        answer = input("Type 'Y' for YES or 'N' ").lower.strip
+        if answer == "Y":
+            quest()
+        elif answer == "N":
+            print("Adventure Over! You're back in the library!")
+        else:
+            print("Please type 'Y' for YES or 'N' for No").lower.strip
+
+
+def quest():
+    typewriter("Great! The crystal of the wizard's staff was hidden by his /n")
+    typewriter("familiar: a cat. The townspeople are doing their best to /n")
+    typewriter("to hold off the evil demons. Many are saying that they /n")
+    typewriter("saw the cat head toward Cassini's Temple")
+    print()
+    while True:
+        print("Choose 1 or 2")
+        choice = ("Cassini's Temple (1) or Fight (2)").lower().strip()
+        if choice == "1":
+            allies()
+        elif choice == "2":
+            print("You do not know how to use your power. You have died.")
+        else:
+            print("Please choose 1 or 2")
 
 
 story_begins()
