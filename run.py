@@ -15,7 +15,7 @@ def typewriter(effect):
         time.sleep(0.1)
 
 
-# ASCII art and title 
+# ASCII title and art
 print(r"""
   _      _ _                 
  | |    (_) |                    
