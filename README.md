@@ -1,32 +1,123 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Library Adventure
+Library Adventure is my third project with Code Insititute. 
 
-Welcome,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+Library Adventure is Live!  Visit [Here]().  Have Fun!
 
 ---
 
-Happy coding!
+## Table of Contents
+
+* [User Experience](#user-experience-ux)
+    * [User Stories](#user-stories)
+
+* [Design](#design)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [Wireframes](#wireframes)
+
+* [Features](#features)
+    * [General Features on Each Page](#general-features-on-each-page)
+    * [Future Implementation](#future-implementations)
+    * [Accessibility](#accessibility)
+
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Libraries and Programs Used](#libraries-and-programs-used)
+
+* [Deployment](#deployment)
+    * [Deployment](#deployment-1)
+
+* [Testing](#testing)
+    * [Testing Validation](#testing-validation)
+
+* [Credits](#credits)
+    * [Code Used](#code-used)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgments](#acknowledgments)
+
+---
+
+## User Experience
+
+### User Stories
+
+
+---
+
+## Design
+
+### Colour Scheme
+
+
+### Typography
+
+
+### Imagery 
+
+---
+
+## Features
+
+### General features on each page
+
+- Favicon
+
+The favicon icon was was sourced from [Canva](https://www.canva.com/). 
+
+![Favicon Tab](/assets/images/readme-images/disney-favicon.png)
+
+### Future Implementations
+
+
+### Accessibility
+
+---
+
+## Technologies Used
+
+### Languages Used
+- Python 3
+
+
+### Libraries and Programs Used
+- [VSCode](https://code.visualstudio.com/) - Used to create the HTML, CSS, and JS files.
+- [Github](https://github.com/) - Used to hold my repository. 
+- [Favicon](https://favicon.io) - Used to create the favicon from the logo that was created. 
+
+---
+
+## Deployment
+Disney Quiz has been deployed through Github.
+
+- Click Here for the live site: [Disney Quiz](https://github.com/apita1423/disney-quiz-pp2)
+
+Instructions on how to deploy:
+
+1. Login to Github.
+2. On the left navigation menu, click on your respository. [Github Repository - apita1423](https://github.com/apita1423/disney-quiz-pp2).
+3. Click on Settings.
+4. Click on Pages on the left navigation menu.
+5. Click on the dropdown menu under Branch and select main and hit Save (this process might take a few minutes).
+
+---
+
+## Testing
+
+### Testing Validation 
+
+---
+
+## Credits
+
+### Code Used
+
+### Content
+
+### Media
+
+### Acknowledgments
+Again, I would like to give thanks to my husband. Who I kept on asking to check if the quiz worked on his phone even though I could have checked it on my phone. But, two sets of eyes are better then one. 
+
+As always, I'm extremely grateful to my mentor Martina who encourages me, especially when I was ready to call it quits. The best mentor anyone can ask for!

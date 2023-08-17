@@ -63,7 +63,7 @@ print()
 # the library needs to know your name
 name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
 print(f"Welcome to the library {name}! Hope you find something special.")
-time.sleep(2)
+time.sleep(3)
 print()
 
 
