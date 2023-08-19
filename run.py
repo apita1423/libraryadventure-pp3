@@ -109,7 +109,7 @@ def quest():
     print()
     while True:
         print()
-        answer = input("Type (1) to Follow or (2) to Fight: ").lower().strip()
+        answer = input("Type 1 (Follow) or 2 (Fight): ").lower().strip()
         if answer == "1":
             allies()
         elif answer == "2":
@@ -117,6 +117,28 @@ def quest():
         else:
             print("Please type 1 or 2")
             break
+
+
+def allies():
+    print()
+    typewriter("Awesome! You chose to follow the cat and start your quest \n")
+    typewriter("to the Cassini Temple. The cat has led you to the wizard's \n")
+    typewriter("home. You find a note written to you to go into the \n")
+    typewriter("Forgotten Forest and find allies to help you restore \n")
+    typewriter("magic. \n")
+    print()
+    typewriter("Do you want to go on the adventure alone(1) or \n")
+    typewriter("find allies(2)?")
+    print()
+    while True:
+        print()
+        answer = input("Type 1 (alone) or 2 (allies): ").lower().strip()
+        if answer == "1":
+            intentions()
+        elif answer == "2":
+            print("Adventure Over! To win this battle you need allies.")
+        else:
+            print("Please type 1 or 2")
 
 
 story_begins()
