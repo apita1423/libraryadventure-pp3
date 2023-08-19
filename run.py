@@ -12,7 +12,7 @@ def typewriter(effect):
     for char in effect:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(0.02)
 
 
 # ASCII title and art
@@ -63,7 +63,7 @@ print()
 # the library needs to know your name
 name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
 print(f"Welcome to the library {name}! Hope you find something special.")
-time.sleep(3)
+time.sleep(2)
 print()
 
 
@@ -79,8 +79,8 @@ def story_begins():
     typewriter("a wizard. The wizard has been hurt in a battle to bring \n")
     typewriter("magic back to the land. The wizard senses your powers \n")
     typewriter("growing and gives you his powers.")
-    start_adventure()
     print()
+    start_adventure()
 
 
 def start_adventure():
@@ -89,30 +89,34 @@ def start_adventure():
     print()
     while True:
         print()
-        answer = input("Type 'Y' for YES or 'N' ").lower.strip
-        if answer == "Y":
+        answer = input("Type YES or NO: ").lower().strip()
+        if answer == "yes":
             quest()
-        elif answer == "N":
+        elif answer == "no":
             print("Adventure Over! You're back in the library!")
         else:
-            print("Please type 'Y' for YES or 'N' for No").lower.strip
+            print("Please type YES or No ")
 
 
 def quest():
-    typewriter("Great! The crystal of the wizard's staff was hidden by his /n")
-    typewriter("familiar: a cat. The townspeople are doing their best to /n")
-    typewriter("to hold off the evil demons. Many are saying that they /n")
-    typewriter("saw the cat head toward Cassini's Temple")
+    print()
+    typewriter("Great! The crystal of the wizard's staff was hidden by his \n")
+    typewriter("familiar: a cat. The townspeople are doing their best to \n")
+    typewriter("hold off the evil demons. Many are saying that they \n")
+    typewriter("saw the cat head toward Cassini's Temple. \n")
+    print()
+    typewriter("Do you follow(1) the cat or fight(2) with the townspeople? ")
     print()
     while True:
-        print("Choose 1 or 2")
-        choice = ("Cassini's Temple (1) or Fight (2)").lower().strip()
-        if choice == "1":
+        print()
+        answer = input("Type (1) to Follow or (2) to Fight: ").lower().strip()
+        if answer == "1":
             allies()
-        elif choice == "2":
+        elif answer == "2":
             print("You do not know how to use your power. You have died.")
         else:
-            print("Please choose 1 or 2")
+            print("Please type 1 or 2")
+            break
 
 
 story_begins()
