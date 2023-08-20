@@ -91,7 +91,7 @@ def story_begins():
 
 def start_adventure():
     print()
-    typewriter("Do you accept the wizard's gift? (Y/N) ")
+    typewriter("Do you accept the wizard's gift? (yes/no) ")
     print()
     while True:
         print()
@@ -100,8 +100,10 @@ def start_adventure():
             quest()
         elif answer == "no":
             print("Adventure Over! You're back in the library!")
+            game_over()
         else:
             print("Please type YES or No ")
+            continue
 
 
 def quest():
@@ -110,7 +112,6 @@ def quest():
     typewriter("familiar: a cat. The townspeople are doing their best to \n")
     typewriter("hold off the evil demons. Many are saying that they \n")
     typewriter("saw the cat head toward Cassini's Temple. \n")
-    print()
     typewriter("Do you fight (1) with the townspeople or follow (2) the cat? ")
     print()
     while True:
@@ -120,11 +121,12 @@ def quest():
         answer = input("Fight (1) or Follow (2): ").lower().strip()
         if answer == "1":
             print("You do not know how to use your power. You have died.")
+            game_over()
         elif answer == "2":
             allies()
         else:
             print("Please chose 1 or 2")
-            break
+            continue
 
 
 def allies():
@@ -141,13 +143,16 @@ def allies():
     while True:
         print()
         typewriter("Choose 1 or 2")
+        print()
         answer = input("Allies (1) or Alone (2): ").lower().strip()
         if answer == "1":
             intentions()
         elif answer == "2":
             print("Adventure Over! To win this battle you need allies.")
+            game_over()
         else:
             print("Please chose 1 or 2")
+            continue
 
 
 def intentions():
@@ -170,10 +175,12 @@ def intentions():
         if answer == "1":
             print("Your intentions are not worthy of the crystal. \n")
             print("Adventure Over!")
+            game_over()
         elif answer == "2":
             crystal()
         else:
             print("Please choose 1 or 2")
+            continue
 
 
 def crystal():
@@ -195,10 +202,30 @@ def crystal():
         if answer == "1":
             print("Greed has consumed you. Power is too strong. \n")
             print("You have died. \n")
+            game_over()
         elif answer == "2":
             magic()
         else:
             print("Please choose 1 or 2")
+            continue
+
+
+def game_over():
+    print()
+    typewriter("You have lost. \n")
+    typewriter("Wizard might just give you another chance. \n")
+    typewriter("Play again? \n")
+    print()
+    while True:
+        print()
+        answer = input("Type yes or no \n").lower().strip()
+        if answer == "yes":
+            start_adventure()
+        elif answer == "no":
+            print("Game Over")
+        else:
+            print("Type yes or no")
+            break
 
 
 story_begins()
