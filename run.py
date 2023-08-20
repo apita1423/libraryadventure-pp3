@@ -65,8 +65,10 @@ name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
 print()
 if name is "":
     print("Welcome to the library Mysterious User! \n")
+    print("Hope you find something special.")
 else:
     print(f"Welcome to the library {name}!")
+    print("Hope you find something special.")
 time.sleep(2)
 print()
 
@@ -109,17 +111,19 @@ def quest():
     typewriter("hold off the evil demons. Many are saying that they \n")
     typewriter("saw the cat head toward Cassini's Temple. \n")
     print()
-    typewriter("Do you follow(1) the cat or fight(2) with the townspeople? ")
+    typewriter("Do you fight (1) with the townspeople or follow (2) the cat? ")
     print()
     while True:
         print()
-        answer = input("Type 1 (Follow) or 2 (Fight): ").lower().strip()
+        typewriter("Choose 1 or 2")
+        print()
+        answer = input("Fight (1) or Follow (2): ").lower().strip()
         if answer == "1":
-            allies()
-        elif answer == "2":
             print("You do not know how to use your power. You have died.")
+        elif answer == "2":
+            allies()
         else:
-            print("Please type 1 or 2")
+            print("Please chose 1 or 2")
             break
 
 
@@ -136,13 +140,14 @@ def allies():
     print()
     while True:
         print()
-        answer = input("Type 1 (alone) or 2 (allies): ").lower().strip()
+        typewriter("Choose 1 or 2")
+        answer = input("Allies (1) or Alone (2): ").lower().strip()
         if answer == "1":
             intentions()
         elif answer == "2":
             print("Adventure Over! To win this battle you need allies.")
         else:
-            print("Please type 1 or 2")
+            print("Please chose 1 or 2")
 
 
 def intentions():
@@ -160,6 +165,7 @@ def intentions():
     while True:
         print()
         typewriter("Choose 1 or 2")
+        print()
         answer = input("Guardians of the Realm (1) or Band of Dragons(2): ")
         if answer == "1":
             print("Your intentions are not worthy of the crystal. \n")
@@ -167,7 +173,32 @@ def intentions():
         elif answer == "2":
             crystal()
         else:
-            print("Please chose 1 or 2")
+            print("Please choose 1 or 2")
+
+
+def crystal():
+    print()
+    typewriter("The journey has been long and treacherous, but with the \n")
+    typewriter("of your allies and the cat, you have found Cassini's \n")
+    typewriter("Temple. The cat has also led you to the crystal that he \n")
+    typewriter("hid. Now the crystal has tremendous power and it will only \n")
+    typewriter("work if the person is worthy enough. \n")
+    print()
+    typewriter("Do you take the power for yourself (1) or help restore \n")
+    typewriter("magic (2)? \n")
+    print()
+    while True:
+        print()
+        typewriter("Choose 1 or 2")
+        print()
+        answer = input("Power for yourslef (1) or Restore Magic (2): ")
+        if answer == "1":
+            print("Greed has consumed you. Power is too strong. \n")
+            print("You have died. \n")
+        elif answer == "2":
+            magic()
+        else:
+            print("Please choose 1 or 2")
 
 
 story_begins()
