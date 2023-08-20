@@ -145,4 +145,29 @@ def allies():
             print("Please type 1 or 2")
 
 
+def intentions():
+    print()
+    typewriter("Great choice! You begin your journey through the Forgotten \n")
+    typewriter("Forest. You start to find allies, but be careful with \n")
+    typewriter("their intentions. The Guardians of the Realm only want \n")
+    typewriter("the crystal to become all-powerful, but the Band of \n")
+    typewriter("Dragons want to help bring peace and magic back to the \n")
+    typewriter("land. What are your intentions? \n")
+    print()
+    typewriter("Do you join The Guardians of the Realm(1) or The Band \n")
+    typewriter("of Dragons (2)? \n")
+    print()
+    while True:
+        print()
+        typewriter("Choose 1 or 2")
+        answer = input("Guardians of the Realm (1) or Band of Dragons(2): ")
+        if answer == "1":
+            print("Your intentions are not worthy of the crystal. \n")
+            print("Adventure Over!")
+        elif answer == "2":
+            crystal()
+        else:
+            print("Please chose 1 or 2")
+
+
 story_begins()
