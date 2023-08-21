@@ -103,8 +103,9 @@ def start_adventure():
         if answer == "yes":
             quest()
         elif answer == "no":
-            print("Adventure Over! You're back in the library!")
-            adventure_over()
+            print(f"{Fore.RED}Adventure Over! You're back in the library!")
+            time.sleep(4)
+            title()
         else:
             print("Please type YES or No ")
             continue
@@ -117,8 +118,8 @@ def quest():
     typewriter("hold off the evil demons. Many are saying that they \n")
     typewriter("saw the cat head toward Cassini's Temple. \n")
     print()
-    typewriter("Do you follow the cat (1) or fight (2) together with the \n")
-    typewriter("townspeople? Choose 1 or 2.")
+    typewriter("Do you follow the cat (1) or fight (2) together \n")
+    typewriter("with the townspeople? Choose 1 or 2.")
     print()
     while True:
         print()
@@ -236,9 +237,9 @@ def magic():
 
 def adventure_over():
     print()
-    typewriter(f"{Fore.RED}You have lost your way. \n")
-    typewriter("Wizard might just give you another chance. \n")
-    typewriter("Play again? \n")
+    print(f"{Fore.RED}You have lost your way. \n")
+    print("Wizard might just give you another chance. \n")
+    print("Play again? \n")
     while True:
         print()
         answer = input("Type YES or NO: \n").lower().strip()
