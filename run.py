@@ -60,21 +60,18 @@ print(fr"""{Fore.RED}
 print()
 
 
-# the library needs to know your name
 def story_begins():
-name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
-print()
-if name is "":
-    print("Welcome to the library Mysterious User! \n")
-    print("Hope you find something special.")
-else:
-    print(f"Welcome to the library {name}!")
-    print("Hope you find something special.")
-time.sleep(2)
-print()
+    name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
+    if name is "":
+        print("Welcome to the library Mysterious User! \n")
+        print("Hope you find something special.")
+    else:
+        print(f"Welcome to the library {name}! \n")
+        print("Hope you find something special.")
+    time.sleep(2)
+    print()
 
 
-# the story begins
 def adventure_begins():
     typewriter("Let the adventure begin... \n")
     typewriter("As you walk through the aisle of books, a red book catches \n")
