@@ -68,21 +68,22 @@ def story_begins():
     print()
     if name is "":
         print(f"{Fore.YELLOW}Welcome to the library Mysterious User! \n")
-        print("Hope you find something special.")
+        typewriter("Hope you find something special.")
     else:
         print(f"Welcome to the library {name}! \n")
-        print("Hope you find something special.")
+        typewriter("Hope you find something special.")
     time.sleep(2)
     print()
     adventure_begins()
 
 
 def adventure_begins():
+    print()
     typewriter("Let the adventure begin... \n")
     print()
     typewriter("As you walk through the aisle of books, a red book catches \n")
     typewriter("your eye. You pick it up and skim through, not realising \n")
-    typewriter("that it's a magical book, and that it has picked you for a \n")
+    typewriter("that it's a magical book and that it has picked you for a \n")
     typewriter("reason. You decide to sit down and begin to read the book. \n")
     typewriter("As you read the book, the library starts to disappear. \n")
     typewriter("You find yourself in a magical land and face-to-face with \n")
@@ -105,7 +106,7 @@ def start_adventure():
         elif answer == "no":
             print(f"{Fore.RED}Adventure Over! You're back in the library!")
             time.sleep(4)
-            adventure_begins()
+            start_adventure()
         else:
             print("Please type YES or No ")
             continue
@@ -113,12 +114,12 @@ def start_adventure():
 
 def quest():
     print()
-    typewriter("Great! The crystal of the wizard's staff was hidden by his \n")
-    typewriter("familiar: a cat. The townspeople are doing their best to \n")
-    typewriter("hold off the evil demons. Many are saying that they \n")
-    typewriter("saw the cat head toward Cassini's Temple. \n")
+    typewriter("Great! The crystal of the wizard's staff has been hidden \n")
+    typewriter("by his familiar: a cat. The townspeople are doing their \n")
+    typewriter("best to hold off the evil demons. Many are saying \n")
+    typewriter("that they saw the cat head toward Cassini's Temple. \n")
     print()
-    typewriter("Do you follow the cat (1) or fight (2) together \n")
+    typewriter("Do you follow (1) the cat or fight (2) together \n")
     typewriter("with the townspeople? Choose 1 or 2.")
     print()
     while True:
@@ -127,8 +128,8 @@ def quest():
         if answer == "1":
             allies()
         elif answer == "2":
-            typewriter(f"{Fore.RED}You do not know how to use your power. \n")
-            typewriter(f"{Fore.RED}You have died!")
+            print(f"{Fore.RED}You do not know how to use your power yet. \n")
+            print(f"{Fore.RED}You have died!")
             adventure_over()
         else:
             print("Please chose 1 or 2")
@@ -138,20 +139,20 @@ def quest():
 def allies():
     print()
     typewriter("Awesome! You chose to follow the cat and start your quest \n")
-    typewriter("to the Cassini Temple. The cat has led you to the wizard's \n")
-    typewriter("home. You find a note written to you to go into the \n")
-    typewriter("Forgotten Forest and find allies to help you restore \n")
-    typewriter("magic. \n")
+    typewriter("to Cassini's Temple. The cat has led you to the \n")
+    typewriter("wizard's home. You find a note written to you to travel \n")
+    typewriter("into the Forgotten Forest and find allies to help you \n")
+    typewriter("restore magic. \n")
     print()
-    typewriter("Do you want to go on the adventure alone(1) or \n")
-    typewriter("find allies(2)? Choose 1 or 2. ")
+    typewriter("Do you want to go on the adventure alone (1) or \n")
+    typewriter("find allies (2)? Choose 1 or 2. ")
     print()
     while True:
         print()
         answer = input("Alone (1) or Allies (2): ").lower().strip()
         if answer == "1":
-            print(f"{Fore.RED}Adventure Over! To win this battle \n")
-            print(f"{Fore.RED}you need allies")
+            print(f"{Fore.RED}Adventure Over! \n")
+            print(f"{Fore.RED}To win this battle you need allies.")
             adventure_over()
         elif answer == "2":
             intentions()
@@ -176,8 +177,8 @@ def intentions():
         print()
         answer = input("Guardians of the Realm (1) or Band of Dragons (2): ")
         if answer == "1":
-            print(f"{Fore.RED}Your intentions are not worthy of \n")
-            print(f"{Fore.RED}the crystal. Adventure Over!")
+            print(f"{Fore.RED}Adventure Over! \n")
+            print(f"{Fore.RED}Your intentions are not worthy.")
             adventure_over()
         elif answer == "2":
             crystal()
@@ -191,8 +192,8 @@ def crystal():
     typewriter("The journey has been long and treacherous, but with the \n")
     typewriter("help of your allies and the cat, you have found Cassini's \n")
     typewriter("Temple. The cat has also led you to the crystal that he \n")
-    typewriter("hid. Now the crystal has tremendous power and it will only \n")
-    typewriter("work if the person possessing it is worthy enough. \n")
+    typewriter("hid. Now the crystal has tremendous power. What would \n")
+    typewriter("you do with the crystal's power? \n")
     print()
     typewriter("Do you help restore magic (1) or take the crystal's power \n")
     typewriter("for yourself (2)? Choose 1 or 2. \n")
@@ -203,8 +204,8 @@ def crystal():
         if answer == "1":
             magic()
         elif answer == "2":
-            print(f"{Fore.RED}Greed has consumed you. Power \n")
-            print(f"{Fore.RED}is too strong. You have died. \n")
+            print(f"{Fore.RED}Greed has consumed you. \n")
+            print(f"{Fore.RED}The power is too strong and you have died. \n")
             adventure_over()
         else:
             print("Please choose 1 or 2")
@@ -239,7 +240,7 @@ def magic():
 
 def adventure_over():
     print()
-    typewriter("You have lost your way. The wizard might just give \n")
+    typewriter("You have lost your way. Let's see if the wizard will give \n")
     typewriter("you another chance. \n")
     print(f"{Fore.GREEN}Play again? \n")
     while True:
@@ -248,7 +249,7 @@ def adventure_over():
         if answer == "yes":
             title()
         elif answer == "no":
-            print("Game Over")
+            print(f"{Fore.RED}Game Over!")
             time.sleep(4)
             title()
         else:
