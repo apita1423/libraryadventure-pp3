@@ -67,7 +67,7 @@ def story_begins():
     name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
     print()
     if name is "":
-        print("Welcome to the library Mysterious User! \n")
+        print(f"{Fore.YELLOW}Welcome to the library Mysterious User! \n")
         print("Hope you find something special.")
     else:
         print(f"Welcome to the library {name}! \n")
@@ -79,6 +79,7 @@ def story_begins():
 
 def adventure_begins():
     typewriter("Let the adventure begin... \n")
+    print()
     typewriter("As you walk through the aisle of books, a red book catches \n")
     typewriter("your eye. You pick it up and skim through, not realising \n")
     typewriter("that it's a magical book, and that it has picked you for a \n")
@@ -115,17 +116,18 @@ def quest():
     typewriter("familiar: a cat. The townspeople are doing their best to \n")
     typewriter("hold off the evil demons. Many are saying that they \n")
     typewriter("saw the cat head toward Cassini's Temple. \n")
-    typewriter("Do you fight (1) with the townspeople or follow (2) the cat? ")
+    print()
+    typewriter("Do you follow the cat (1) or fight (2) together with the \n")
+    typewriter("townspeople? Choose 1 or 2.")
     print()
     while True:
         print()
-        typewriter("Choose 1 or 2")
-        answer = input("Fight (1) or Follow (2): ").lower().strip()
+        answer = input("Follow (1) or Fight (2): ").lower().strip()
         if answer == "1":
+            allies()
+        elif answer == "2":
             print("You do not know how to use your power. You have died.")
             adventure_over()
-        elif answer == "2":
-            allies()
         else:
             print("Please chose 1 or 2")
             continue
@@ -140,14 +142,13 @@ def allies():
     typewriter("magic. \n")
     print()
     typewriter("Do you want to go on the adventure alone(1) or \n")
-    typewriter("find allies(2)?")
+    typewriter("find allies(2)? Choose 1 or 2. ")
     print()
     while True:
         print()
-        typewriter("Choose 1 or 2")
         answer = input("Alone (1) or Allies (2): ").lower().strip()
         if answer == "1":
-            print("Adventure Over! To win this battle you need allies")
+            print("Adventure Over! To win this battle you need allies.")
             adventure_over()
         elif answer == "2":
             intentions()
@@ -158,19 +159,19 @@ def allies():
 
 def intentions():
     print()
-    typewriter("Great choice! You begin your journey through the Forgotten \n")
+    typewriter("Great! You begin your journey through the Forgotten \n")
     typewriter("Forest. You start to find allies, but be careful with \n")
     typewriter("their intentions. The Guardians of the Realm only want \n")
     typewriter("the crystal to become all-powerful, but the Band of \n")
-    typewriter("Dragons want to help bring peace and magic back to the \n")
+    typewriter("Dragons want to help bring peace back to the \n")
     typewriter("land. What are your intentions? \n")
     print()
-    typewriter("Do you join The Guardians of the Realm(1) or The Band \n")
-    typewriter("of Dragons (2)? \n")
+    typewriter("Do you join The Guardians of the Realm (1) or The Band \n")
+    typewriter("of Dragons (2)? Choose 1 or 2. \n")
+    print()
     while True:
         print()
-        typewriter("Choose 1 or 2")
-        answer = input("Guardians of the Realm (1) or Band of Dragons(2): ")
+        answer = input("Guardians of the Realm (1) or Band of Dragons (2): ")
         if answer == "1":
             print("Your intentions are not worthy of the crystal. \n")
             print("Adventure Over!")
@@ -185,24 +186,23 @@ def intentions():
 def crystal():
     print()
     typewriter("The journey has been long and treacherous, but with the \n")
-    typewriter("of your allies and the cat, you have found Cassini's \n")
+    typewriter("help of your allies and the cat, you have found Cassini's \n")
     typewriter("Temple. The cat has also led you to the crystal that he \n")
     typewriter("hid. Now the crystal has tremendous power and it will only \n")
-    typewriter("work if the person is worthy enough. \n")
+    typewriter("work if the person possessing it is worthy enough. \n")
     print()
-    typewriter("Do you take the power for yourself (1) or help restore \n")
-    typewriter("magic (2)? \n")
+    typewriter("Do you help restore magic (1) or take the crystal's power \n")
+    typewriter("for yourself (2)? Choose 1 or 2. \n")
     print()
     while True:
         print()
-        typewriter("Choose 1 or 2")
-        answer = input("Power for yourslef (1) or Restore Magic (2): ")
+        answer = input("Restore magic (1) or Take the crystal's power (2): ")
         if answer == "1":
+            magic()
+        elif answer == "2":
             print("Greed has consumed you. Power is too strong. \n")
             print("You have died. \n")
             adventure_over()
-        elif answer == "2":
-            magic()
         else:
             print("Please choose 1 or 2")
             continue
@@ -212,43 +212,26 @@ def magic():
     print()
     typewriter("Hoorah! Together with your allies and the townspeople \n")
     typewriter("you have managed to kill the evil demons and bring \n")
-    typewriter("back peace and magic back to the land! \n")
-    typewriter("Are you ready to go on you next adventure or are \n")
-    typewriter("you ready to go home?")
+    typewriter("peace and magic back to the land! Are you ready to\n")
+    typewriter("go on you next adventure or are you ready to go home? \n")
+    typewriter("Choose 1 or 2.")
     print()
-    typewriter("Go an another adventure (1) or go home (2)")
+    typewriter("Go an another adventure (1) or go home (2)? \n")
     print()
     while True:
         print()
-        typewriter("Choose 1 or 2")
         answer = input("Adventure (1) or Home (2): \n")
         if answer == "1":
-            adventure_two()
+            typewriter("That's great! But, this adventure is in the \n")
+            typewriter("middle of brewing.")
+            time.sleep(4)
+            title()
         elif answer == "2":
+            typewriter("We will be here when you are ready to come back.")
+            time.sleep(4)
             title()
         else:
             print("Please choose 1 or 2")
-            break
-
-
-def adventure_two():
-    print()
-    typewriter("Ready to go an another adventure? \n")
-    while True:
-        print()
-        answer = input("Type YES or NO: ").lower().strip()
-        if answer == "yes":
-            typewriter("That is great! But, this adventure is in the \n")
-            typewriter("middle of brewing.")
-            time.sleep(3)
-            title()
-        elif answer == "no":
-            typewriter("No worries. We will be here when you ready \n")
-            typewriter("to come back!")
-            time.sleep(3)
-            title()
-        else:
-            print("Please type 1 or 2")
             break
 
 
@@ -259,13 +242,13 @@ def adventure_over():
     typewriter("Play again? \n")
     while True:
         print()
-        answer = input("Type yes or no: \n").lower().strip()
+        answer = input("Type YES or NO: \n").lower().strip()
         if answer == "yes":
             start_adventure()
         elif answer == "no":
             print("Game Over")
         else:
-            print("Type yes or no")
+            print("Type YES or NO")
             break
 
 
