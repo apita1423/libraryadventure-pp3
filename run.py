@@ -239,14 +239,14 @@ def magic():
 
 def adventure_over():
     print()
-    print("You have lost your way. The wizard might just give \n")
-    print("you another chance. \n")
+    typewriter("You have lost your way. The wizard might just give \n")
+    typewriter("you another chance. \n")
     print(f"{Fore.GREEN}Play again? \n")
     while True:
         print()
         answer = input("Type YES or NO: \n").lower().strip()
         if answer == "yes":
-            start_adventure()
+            title()
         elif answer == "no":
             print("Game Over")
             time.sleep(4)
