@@ -59,10 +59,13 @@ def title():
 ^--^---'--^    `-'`---^-^--^--^---'--' hjw
 """)
     print()
+    story_begins()
 
 
 def story_begins():
+    print()
     name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
+    print()
     if name is "":
         print("Welcome to the library Mysterious User! \n")
         print("Hope you find something special.")
@@ -71,6 +74,7 @@ def story_begins():
         print("Hope you find something special.")
     time.sleep(2)
     print()
+    adventure_begins()
 
 
 def adventure_begins():
@@ -116,7 +120,6 @@ def quest():
     while True:
         print()
         typewriter("Choose 1 or 2")
-        print()
         answer = input("Fight (1) or Follow (2): ").lower().strip()
         if answer == "1":
             print("You do not know how to use your power. You have died.")
@@ -142,7 +145,6 @@ def allies():
     while True:
         print()
         typewriter("Choose 1 or 2")
-        print()
         answer = input("Alone (1) or Allies (2): ").lower().strip()
         if answer == "1":
             print("Adventure Over! To win this battle you need allies")
@@ -165,11 +167,9 @@ def intentions():
     print()
     typewriter("Do you join The Guardians of the Realm(1) or The Band \n")
     typewriter("of Dragons (2)? \n")
-    print()
     while True:
         print()
         typewriter("Choose 1 or 2")
-        print()
         answer = input("Guardians of the Realm (1) or Band of Dragons(2): ")
         if answer == "1":
             print("Your intentions are not worthy of the crystal. \n")
@@ -196,7 +196,6 @@ def crystal():
     while True:
         print()
         typewriter("Choose 1 or 2")
-        print()
         answer = input("Power for yourslef (1) or Restore Magic (2): ")
         if answer == "1":
             print("Greed has consumed you. Power is too strong. \n")
@@ -217,46 +216,47 @@ def magic():
     typewriter("Are you ready to go on you next adventure or are \n")
     typewriter("you ready to go home?")
     print()
-    typewriter("Go home (1) or go an another adventure (2)")
+    typewriter("Go an another adventure (1) or go home (2)")
     print()
     while True:
-        typewriter("Choose 1 or 2")
         print()
-        answer = input("Home (1) or Adventure (2): \n")
+        typewriter("Choose 1 or 2")
+        answer = input("Adventure (1) or Home (2): \n")
         if answer == "1":
-            story_begins()
-        elif answer == "2":
             adventure_two()
+        elif answer == "2":
+            title()
         else:
             print("Please choose 1 or 2")
-            continue
+            break
+
 
 def adventure_two():
     print()
     typewriter("Ready to go an another adventure? \n")
-    print()
     while True:
         print()
-        answer = input("Type yes or no: ").lower().strip
+        answer = input("Type YES or NO: ").lower().strip()
         if answer == "yes":
             typewriter("That is great! But, this adventure is in the \n")
             typewriter("middle of brewing.")
             time.sleep(3)
-            story_begins()
-        elif == "no":
+            title()
+        elif answer == "no":
             typewriter("No worries. We will be here when you ready \n")
             typewriter("to come back!")
             time.sleep(3)
             title()
+        else:
+            print("Please type 1 or 2")
             break
-            
+
 
 def adventure_over():
     print()
     typewriter(f"{Fore.RED}You have lost your way. \n")
     typewriter("Wizard might just give you another chance. \n")
     typewriter("Play again? \n")
-    print()
     while True:
         print()
         answer = input("Type yes or no: \n").lower().strip()
