@@ -105,7 +105,7 @@ def start_adventure():
         elif answer == "no":
             print(f"{Fore.RED}Adventure Over! You're back in the library!")
             time.sleep(4)
-            title()
+            adventure_begins()
         else:
             print("Please type YES or No ")
             continue
@@ -127,8 +127,8 @@ def quest():
         if answer == "1":
             allies()
         elif answer == "2":
-            print(f"{Fore.RED}You do not know how to use your power. \n")
-            print(f"{Fore.RED}You have died!")
+            typewriter(f"{Fore.RED}You do not know how to use your power. \n")
+            typewriter(f"{Fore.RED}You have died!")
             adventure_over()
         else:
             print("Please chose 1 or 2")
