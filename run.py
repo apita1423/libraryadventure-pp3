@@ -61,6 +61,7 @@ print()
 
 
 # the library needs to know your name
+def story_begins():
 name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
 print()
 if name is "":
@@ -74,7 +75,7 @@ print()
 
 
 # the story begins
-def story_begins():
+def adventure_begins():
     typewriter("Let the adventure begin... \n")
     typewriter("As you walk through the aisle of books, a red book catches \n")
     typewriter("your eye. You pick it up and skim through, not realising \n")
@@ -210,9 +211,31 @@ def crystal():
             continue
 
 
+def magic():
+    print()
+    typewriter("Hoorah! Together with your allies and the townspeople \n")
+    typewriter("you have managed to kill the evil demons and bring \n")
+    typewriter("back peace and magic back to the land! \n")
+    typewriter("Are you ready to go on you next adventure or are \n")
+    typewriter("you ready to go home?")
+    print()
+    typewriter("Go home (1) or go an another adventure (2)")
+    print()
+    while True:
+        typewriter("Choose 1 or 2")
+        print()
+        answer = input("Home (1) or Adventure (2): \n")
+        if answer == "1":
+            story_begins()
+        elif answer == "2":
+            adventure_two()
+        else:
+            print("Please choose 1 or 2")
+
+
 def game_over():
     print()
-    typewriter("You have lost. \n")
+    typewriter(f"{Fore.RED}You have lost your way. \n")
     typewriter("Wizard might just give you another chance. \n")
     typewriter("Play again? \n")
     print()
