@@ -62,11 +62,6 @@ Library Adventure is Live!  Visit [Here]().  Have Fun!
 
 ### General features on each page
 
-- Favicon
-
-The favicon icon was was sourced from [Canva](https://www.canva.com/). 
-
-![Favicon Tab](/assets/images/readme-images/disney-favicon.png)
 
 ### Future Implementations
 
@@ -82,14 +77,14 @@ The favicon icon was was sourced from [Canva](https://www.canva.com/).
 
 
 ### Libraries and Programs Used
-- [VSCode](https://code.visualstudio.com/) - Used to create the HTML, CSS, and JS files.
+- 
 - [Github](https://github.com/) - Used to hold my repository. 
-- [Favicon](https://favicon.io) - Used to create the favicon from the logo that was created. 
+- 
 
 ---
 
 ## Deployment
-Disney Quiz has been deployed through Github.
+Library Adventure has been deployed through Heroku.
 
 - Click Here for the live site: [Disney Quiz](https://github.com/apita1423/disney-quiz-pp2)
 
