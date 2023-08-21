@@ -210,11 +210,10 @@ def crystal():
 
 def magic():
     print()
-    typewriter("Hoorah! Together with your allies and the townspeople \n")
-    typewriter("you have managed to kill the evil demons and bring \n")
-    typewriter("peace and magic back to the land! Are you ready to\n")
-    typewriter("go on you next adventure or are you ready to go home? \n")
-    typewriter("Choose 1 or 2.")
+    typewriter("Hoorah! Together with your allies and the townspeople you \n")
+    typewriter("have managed to kill the evil demons and bring peace \n")
+    typewriter("and magic back to the land! Are you ready to go on your \n")
+    typewriter("next adventure or go home? Choose 1 or 2. \n")
     print()
     typewriter("Go an another adventure (1) or go home (2)? \n")
     print()
