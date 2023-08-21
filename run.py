@@ -15,7 +15,8 @@ def typewriter(effect):
         time.sleep(0.02)
 
 
-# ASCII title and art
+# AISCII title and book art. Iniital of book art creator is shown on the side
+# title() function starts the program.
 def title():
     print(r"""
   _      _ _                 
@@ -62,11 +63,14 @@ def title():
     story_begins()
 
 
+# story_begins() prompts the user to input their name so they can be
+# welcomed into the library. If the user does not want to add their
+# name, it will still welcome them but it would say mysterious user.
 def story_begins():
     print()
     name = input(f"{Fore.YELLOW}Please enter your name: ").capitalize().strip()
     print()
-    if name is "":
+    if name == "":
         print(f"{Fore.YELLOW}Welcome to the library Mysterious User! \n")
         typewriter("Hope you find something special.")
     else:
@@ -77,6 +81,8 @@ def story_begins():
     adventure_begins()
 
 
+# adventure_begins() gives a back story to the text adventure game and
+# initiates the game with the start_adventure.
 def adventure_begins():
     print()
     typewriter("Let the adventure begin... \n")
@@ -94,6 +100,10 @@ def adventure_begins():
     start_adventure()
 
 
+# start_adventure() begins the game with question following the back story.
+# It allows the user to type yes or no. If they type yes it continues to
+# the next part of the game. If they press no it gives them a Adventure
+# over statement and takes the user back to the beginning.
 def start_adventure():
     print()
     typewriter("Do you accept the wizard's gift? (yes/no) ")
@@ -106,12 +116,17 @@ def start_adventure():
         elif answer == "no":
             print(f"{Fore.RED}Adventure Over! You're back in the library!")
             time.sleep(4)
-            start_adventure()
+            title()
         else:
             print("Please type YES or No ")
             continue
 
 
+# quest() happens have the user has typed yes in the start_adventure. Here
+# the user is given a snippet of the rest of story with a question. The
+# question allows for two answers 1 or 2. If they chose the correct answer
+# it prompts the next part of the story. If the user chooses the wrong
+# answer they get an adventure over statment and a chance to play again.
 def quest():
     print()
     typewriter("Great! The crystal of the wizard's staff has been hidden \n")
@@ -136,6 +151,12 @@ def quest():
             continue
 
 
+# allies() happens after the user input the correct answer in the previous
+# function. The action here is the same as quest. Continuing the story, the
+# user again needs to decide which choice is going to pick. If the user
+# choses the right choice it prompts to go to the next part of the story.
+# If the user choses the wrong answer, they are prompt with adventure over
+# statement and a chance to start over.
 def allies():
     print()
     typewriter("Awesome! You chose to follow the cat and start your quest \n")
@@ -161,6 +182,12 @@ def allies():
             continue
 
 
+# intentions() is what comes after the correct answer was picked in allies.
+# It does the same has the previous codes. It continues the story and
+# the user needs to chose the correct answer. If correct answer is picked
+# it prompts the next part of the storyline. If the incorrect answer is
+# picked it gives them an adventure over statement and allows the user
+# to play again.
 def intentions():
     print()
     typewriter("Great! You begin your journey through the Forgotten \n")
@@ -187,6 +214,10 @@ def intentions():
             continue
 
 
+# crystal() is the continuing storyline from intentions if the user chose the
+# correct answer. It also gives two options to pick and if the wrong answer
+# is chosen it hints that the adventure is over and also prompts the user
+# if they want to play again.
 def crystal():
     print()
     typewriter("The journey has been long and treacherous, but with the \n")
@@ -212,6 +243,12 @@ def crystal():
             continue
 
 
+# magic() is the last part of the storyline. The user's choice is different
+# here. Once they have reached to the last part of the story they are asked if
+# they want to go on another adventure or go home. If they choose another
+# adventure they are prompted with a statement saying the adventure is brewing
+# (or in the making). If they use to go home they are back at the beginning of
+# the game.
 def magic():
     print()
     typewriter("Hoorah! Together with your allies and the townspeople you \n")
@@ -238,6 +275,10 @@ def magic():
             break
 
 
+# adventure_over is a function used for when user pick the wrong answwer
+# they are allowed to start over. If they decide not to play again they are
+# prompted with a GAME OVER! and the game starts over from the beginning.
+# this function is placed in the wrong answers through the story.
 def adventure_over():
     print()
     typewriter("You have lost your way. Let's see if the wizard will give \n")
@@ -249,7 +290,7 @@ def adventure_over():
         if answer == "yes":
             title()
         elif answer == "no":
-            print(f"{Fore.RED}Game Over!")
+            print(f"{Fore.RED}GAME OVER!")
             time.sleep(4)
             title()
         else:
@@ -257,4 +298,5 @@ def adventure_over():
             break
 
 
+# title() calls the function to start the game
 title()
