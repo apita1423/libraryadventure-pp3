@@ -127,7 +127,8 @@ def quest():
         if answer == "1":
             allies()
         elif answer == "2":
-            print("You do not know how to use your power. You have died.")
+            print(f"{Fore.RED}You do not know how to use your power. \n")
+            print(f"{Fore.RED}You have died!")
             adventure_over()
         else:
             print("Please chose 1 or 2")
@@ -149,7 +150,8 @@ def allies():
         print()
         answer = input("Alone (1) or Allies (2): ").lower().strip()
         if answer == "1":
-            print("Adventure Over! To win this battle you need allies.")
+            print(f"{Fore.RED}Adventure Over! To win this battle \n")
+            print(f"{Fore.RED}you need allies")
             adventure_over()
         elif answer == "2":
             intentions()
@@ -174,8 +176,8 @@ def intentions():
         print()
         answer = input("Guardians of the Realm (1) or Band of Dragons (2): ")
         if answer == "1":
-            print("Your intentions are not worthy of the crystal. \n")
-            print("Adventure Over!")
+            print(f"{Fore.RED}Your intentions are not worthy of \n")
+            print(f"{Fore.RED}the crystal. Adventure Over!")
             adventure_over()
         elif answer == "2":
             crystal()
@@ -201,8 +203,8 @@ def crystal():
         if answer == "1":
             magic()
         elif answer == "2":
-            print("Greed has consumed you. Power is too strong. \n")
-            print("You have died. \n")
+            print(f"{Fore.RED}Greed has consumed you. Power \n")
+            print(f"{Fore.RED}is too strong. You have died. \n")
             adventure_over()
         else:
             print("Please choose 1 or 2")
@@ -237,9 +239,9 @@ def magic():
 
 def adventure_over():
     print()
-    print(f"{Fore.RED}You have lost your way. \n")
-    print("Wizard might just give you another chance. \n")
-    print("Play again? \n")
+    print("You have lost your way. The wizard might just give \n")
+    print("you another chance. \n")
+    print(f"{Fore.GREEN}Play again? \n")
     while True:
         print()
         answer = input("Type YES or NO: \n").lower().strip()
@@ -247,6 +249,8 @@ def adventure_over():
             start_adventure()
         elif answer == "no":
             print("Game Over")
+            time.sleep(4)
+            title()
         else:
             print("Type YES or NO")
             break
