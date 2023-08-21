@@ -15,7 +15,7 @@ def typewriter(effect):
         time.sleep(0.02)
 
 
-# AISCII title and book art. Iniital of book art creator is shown on the side
+# ASCII title and book art. Iniital of book art creator is shown on the side
 # title() function starts the program.
 def title():
     print(r"""
@@ -278,7 +278,8 @@ def magic():
 
 # adventure_over is a function used for when users pick the wrong answer.
 # They are allowed to start over. If they decide not to play again they are
-# prompted with a GAME OVER! and the game starts over from the beginning.
+# prompted with a GAME OVER! and the game starts over from the beginning. If
+# they chose yes they are brought back to the start_adventure() question.
 # This function is placed in the wrong answers through the story.
 def adventure_over():
     print()
@@ -289,7 +290,7 @@ def adventure_over():
         print()
         answer = input("Type YES or NO: \n").lower().strip()
         if answer == "yes":
-            title()
+            adventure_begins()
         elif answer == "no":
             print(f"{Fore.RED}GAME OVER!")
             time.sleep(4)
