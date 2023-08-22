@@ -60,6 +60,41 @@ Talking about libraries and books, of course, I wanted to add an image books. Th
 ---
 
 ## Features
+- Library Adventure Title - Build through ASCII.
+
+![Library Adventure Title](/assets/images/library_adventure.PNG)
+
+- Red book ASCII Art - A red book is mentioned in the story.
+
+![Red books](/assets/images/red_book.PNG)
+
+- Please enter you name prompt - Name is used to welcome the user into the library.
+
+![Welcome to the library (name)](/assets/images/welcome_name.PNG)
+
+- Mysterious User name prompt if user does not want to add name.
+
+![Welcome Mysterious User](/assets/images/mysterious_user.PNG)
+
+- Back story to the user in the library and then appearing in the book. With a yes/no question at the end, which depending on answer continues the game or goes back to the beginning.
+
+![Start Adventure](/assets/images/adventure_begin.PNG)
+
+- When the user clicks on "no" in the first question.
+
+![No to wizard's gift](/assets/images/no_gift.PNG)
+
+- If user clicked typed "yes" to the wizard's gift the game starts, which gives the user two options (1 or 2) to chose from. This continues until the ending of the story. If use clicks on the correct number the storyline continues with two options. 
+
+![Yes to the wizard's gift](/assets/images/choice_options.PNG)
+
+- If, throughout the storyline, the user decides to pick the wrong answer, an adventure over prompt is given and a Play Again option is also given.
+
+![Second chances](/assets/images/wrong_answer.PNG)
+
+- If the user types no on the Play Again option, then the user will have a GAME OVER prompt. It will wait a few seconds and restart the game from the beginning. 
+
+![Game over](/assets/images/no_play_again.PNG)
 
 ### General features on each page
 
