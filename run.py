@@ -210,8 +210,8 @@ def intentions():
 def crystal():
     print()
     typewriter("The journey has been long and treacherous, but with the \n")
-    typewriter("help of your allies, you have found Cassini's Temple \n")
-    typewriter("The cat has also led you to the crystal that he hid \n")
+    typewriter("help of your allies, you have found Cassini's Temple. \n")
+    typewriter("The cat has also led you to the crystal that he hid. \n")
     typewriter("Now the crystal has tremendous power. What will \n")
     typewriter("you do with the crystal's power? \n")
     print()
