@@ -278,7 +278,7 @@ def adventure_over():
         print()
         answer = input("Type YES or NO: \n").lower().strip()
         if answer == "yes":
-            adventure_begins()
+            start_adventure()
         elif answer == "no":
             print(f"{Fore.RED}GAME OVER!")
             time.sleep(4)
