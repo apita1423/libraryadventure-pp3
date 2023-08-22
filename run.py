@@ -144,10 +144,10 @@ def start_quest():
             continue
 
 
-# find_allies() happens after the user input the correct answer in the 
+# find_allies() happens after the user inputs the correct answer in the
 # start_quest() function. The action here is the same as start_quest().
-# Continuing the story the user again needs to decide which choice
-# they are going to pick. If the user choses the right choice it prompts 
+# Continuing the story, the user again needs to decide which choice
+# they are going to pick. If the user choses the right choice it prompts
 # worthy_intentions(). If the user choses the wrong answer, they are prompt
 # with adventure over statement and a chance to start over.
 def find_allies():

@@ -1,7 +1,7 @@
 # Library Adventure
-Library Adventure is my third project with Code Insititute. 
+Library Adventure is a text-based adventure game. The player is someone visitng the library and notices a book on the shelf. The players start reading and is transported to a far way land where the players meets a wizard. The player is given two choices through the storyline and with every correct answer he is 
 
-Library Adventure is Live!  Visit [Here]().  Have Fun!
+Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 
 ---
 
@@ -12,17 +12,15 @@ Library Adventure is Live!  Visit [Here]().  Have Fun!
 
 * [Design](#design)
     * [Colour Scheme](#colour-scheme)
-    * [Typography](#typography)
     * [Imagery](#imagery)
-    * [Wireframes](#wireframes)
 
 * [Features](#features)
-    * [General Features on Each Page](#general-features-on-each-page)
+    * [General Features](#general-features)
     * [Future Implementation](#future-implementations)
-    * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
+    * [Modules Used](#modules-used)
     * [Libraries and Programs Used](#libraries-and-programs-used)
 
 * [Deployment](#deployment)
@@ -49,13 +47,10 @@ Library Adventure is Live!  Visit [Here]().  Have Fun!
 ## Design
 
 ### Colour Scheme
-
-
-### Typography
-
+I used the Colorama module as a way to colour my text in the Python terminal. The Library Adenture title has stayed white because I wanted the title to pop especially with the black background. The book ASCII art is red due to the story mentioning a red book. "Please enter your name:" is yellow as well as when the user puts in their name or not. When the user inputs the wrong answer, the prompt is red. When the user is asked if they want to play again, the "Play Again?" is in green. 
 
 ### Imagery 
-
+With talking about libraries and books, of course, I wanted to add an image of book. The ASCII book art is was a great choice, because of one book on it's side. It is like that one is the one that catches the players eyes. 
 ---
 
 ## Features
@@ -65,11 +60,8 @@ Library Adventure is Live!  Visit [Here]().  Have Fun!
 
 ### Future Implementations
 
-- Add another adventure to the story. At the end of Library Adventure, there is an adventure to go on another adventure, but I added that it was still in the middle of brewing. 
+- Add another adventure to the story. At the end of Library Adventure, there is an option to go on another adventure, but I added that it was still in the middle of brewing. 
 - I would also like to experiment with adding different characters to the story. 
-
-### Accessibility
-
 ---
 
 ## Tools and Technologies Used
@@ -86,6 +78,8 @@ Library Adventure is Live!  Visit [Here]().  Have Fun!
 - [Codeanywhere](https://app/codeanywhere.com) - Used to write the python code.
 - [Github](https://github.com/) - Used to hold my repository. 
 - [Git](https://git-scm.com/) - User for version control.
+- [ASCII Art Archive](https://www.asciiart.eu/books/books) - Used to create the book art - Initial of the creator was kept with the art (lower right corner).
+- [ASCII Art Title](https://patorjk.com/software/taag/#p=display&f=Big&t=%0A) - Used to create the Library Adventure title.
 
 
 ---
