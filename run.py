@@ -210,9 +210,9 @@ def intentions():
 def crystal():
     print()
     typewriter("The journey has been long and treacherous, but with the \n")
-    typewriter("help of your allies and the cat, you have found Cassini's \n")
-    typewriter("Temple. The cat has also led you to the crystal that he \n")
-    typewriter("hid. Now the crystal has tremendous power. What would \n")
+    typewriter("help of your allies, you have found Cassini's Temple \n")
+    typewriter("The cat has also led you to the crystal that he hid \n")
+    typewriter("Now the crystal has tremendous power. What will \n")
     typewriter("you do with the crystal's power? \n")
     print()
     typewriter("Do you help restore magic (1) or take the crystal's power \n")
@@ -233,10 +233,10 @@ def crystal():
 
 
 # magic() is the last part of the storyline. The user's choice is different
-# here. Once they have reached last part of the story they are asked if
+# here. Once they have reached the last part of the story they are asked if
 # they want to go on another adventure or go home. If they choose another
 # adventure they are prompted with a statement saying the adventure is brewing
-# (or in the making). If they use to go home they are back at the beginning of
+# (or in the making). If they chose to go home they are back at the beginning of
 # the game.
 def magic():
     print()
@@ -245,7 +245,7 @@ def magic():
     typewriter("and magic back to the land! Are you ready to go on your \n")
     typewriter("next adventure or go home? Choose 1 or 2. \n")
     print()
-    typewriter("Go an another adventure (1) or go home (2)? \n")
+    typewriter("Go on another adventure (1) or go home (2)? \n")
     print()
     while True:
         print()
