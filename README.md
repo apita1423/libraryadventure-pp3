@@ -1,11 +1,11 @@
 # Library Adventure
-Library Adventure is my third project for Code Insitiute. The idea came from always enjoying the thought of jumping into a book that you love and experiencing the world and sometimes living through the adventure of the story. 
+Library Adventure is my third project for Code Insitiute. The idea came from always enjoying the thought of jumping into a book that you love and experiencing the world and wonder what it would be like to go on all the adventures that all these main characters go on. 
 
-Text-based adventure have come a long way, but there something nostalgic when seeing the white blinking button waiting for your next move. So, I combined the two ideas of jumping into a book and going on adventure, but like they did in the olden days. 
+Text-based adventure have come a long way, but there is something nostalgic when seeing the white blinking button waiting for your next move. So, I combined the two ideas of jumping into a book and going on text-based adventure. 
 
 ![Library Adventure Title Image](/assets/images/library_adventure.PNG)
 
-Library Adventure is Live!  Visit [Here]().  Have a great adventure!
+Library Adventure is Live! Visit [Here](). Have a great adventure!
 
 ---
 
@@ -45,17 +45,19 @@ Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 ## User Experience
 
 ### User Stories
+We have always had those stories that we just wanted to jump into and just stay there awhile. Experience what the main character is experiencing. That is what I tried to do with this project.
 
+The story starts with the user in the library, which becomes a bit personal because I ask for their name and it prompts to welcome them to the library. The story continues with a red book (hence the red book ASCII art) and the user picks it up and starts reading and he essentially is transported into the book's world. Here the user is presented with the story and two different situations they can pick from. But, the user has to be careful with what option they choose. It could be the right or wrong answer. But, with every wrong answer there is a second chance for the user to chose the right path. 
 
 ---
 
 ## Design
 
 ### Colour Scheme
-I used the Colorama module as a way to colour my text in the Python terminal. The Library Adenture title has stayed white because I wanted the title to pop especially with the black background. The book ASCII art is red due to the story mentioning a red book. "Please enter your name:" is yellow as well as when the user puts in their name or decides not to. When the user inputs the wrong answer, the prompt they receive is red. When the user is asked if they want to play again, the "Play Again?" is in green. 
+I used the Colorama module as a way to colour my text in the Python terminal. The Library Adenture title has stayed white because I wanted the title to pop especially with the black background. The book ASCII art is red due to the story mentioning a red book. "Please enter your name:" is yellow as well as when the user is prompted with "Welcome to the library (name). When the user inputs the wrong answer, the prompt they receive is red. When the user is asked if they want to play again, the "Play Again?" is in green. Game Over is also in red.
 
 ### Imagery 
-Talking about libraries and books, of course, I wanted to add an image books. The ASCII book art was a great choice, especially with one book on it's side. It is like that book is the one that catches the players eyes. 
+Talking about libraries and books, of course, I wanted to add an image of books. The ASCII book art was a great choice, especially with one book on it's side. It is like that book is the one that catches the players' eyes. 
 
 ---
 
@@ -72,27 +74,27 @@ Talking about libraries and books, of course, I wanted to add an image books. Th
 
 ![Welcome to the library (name)](/assets/images/welcome_name.PNG)
 
-- Mysterious User name prompt if user does not want to add name.
+- Mysterious User name prompt -  If user does not want to add name.
 
 ![Welcome Mysterious User](/assets/images/mysterious_user.PNG)
 
-- Back story to the user in the library and then appearing in the book. With a yes/no question at the end, which depending on answer continues the game or goes back to the beginning.
+- Back story to the user in the library and then disappearing into the book. With a yes/no question at the end, which depending on he answer continues the game or goes back to the beginning.
 
 ![Start Adventure](/assets/images/adventure_begin.PNG)
 
-- When the user clicks on "no" in the first question.
+- When the user typed "no" in the first question.
 
 ![No to wizard's gift](/assets/images/no_gift.PNG)
 
-- If user clicked typed "yes" to the wizard's gift the game starts, which gives the user two options (1 or 2) to chose from. This continues until the ending of the story. If use clicks on the correct number the storyline continues with two options. 
+- If user typed "yes" to the wizard's gift the game starts, which gives the user two options (1 or 2) to chose from. This continues until the ending of the story. If user typed the correct number the storyline continues with two options. 
 
 ![Yes to the wizard's gift](/assets/images/choice_options.PNG)
 
-- If, throughout the storyline, the user decides to pick the wrong answer, an adventure over prompt is given and a Play Again option is also given.
+- If, throughout the storyline, the user decides to pick the wrong answer, an Adventure Over! prompt is given and a Play Again option is also given.
 
 ![Second chances](/assets/images/wrong_answer.PNG)
 
-- If the user types no on the Play Again option, then the user will have a GAME OVER prompt. It will wait a few seconds and restart the game from the beginning. 
+- If the user types "no" on the Play Again option, then the user will have a GAME OVER prompt. It will wait a few seconds and restart the game from the beginning. 
 
 ![Game over](/assets/images/no_play_again.PNG)
 
@@ -121,7 +123,7 @@ I used [Lucid Chart](https://lucid.app/) to create my story flow for the text-ba
 - Colorama (fore)
 
 ### Libraries and Programs Used
-- [Codeanywhere](https://app/codeanywhere.com) - Used to write the python code.
+- [VSCode](https://code.visualstudio.com/) - Used to write the python code.
 - [Github](https://github.com/) - Used to hold my repository. 
 - [Git](https://git-scm.com/) - User for version control.
 - [ASCII Art Archive](https://www.asciiart.eu/books/books) - Used to create the book art - Initial of the creator was kept with the art (lower right corner).
@@ -138,14 +140,14 @@ Library Adventure has been deployed through Heroku.
 Instructions on how to deploy on [Heroku](https://www.heroku.com):
 
 1. Login to Heroku.
-2. Once set up a multifactor authentication needs to be approved.
+2. Once set up, a multifactor authentication needs to be approved.
 3. On your Dashboard, click on the Create new app button.
 4. Now enter a name in the App name. Each name is unique. Once enter, a green checkmark should appear if its valid.
 5. Choose a region: United States or Europe (depending on location). Then click on the Create app button.
-6. After clicking on the Create app button, the updated Dashboard has a few tabs listed. Two tabs that needs to be updated is Deploy and Settings.
+6. After clicking on the Create app button, the updated Dashboard has tabs listed. Two tabs that needs to be updated is Deploy and Settings.
 7. Settings will be first. 
-8. Under Settings, chose Congif Vars first. Enter PORT into the key section and 8000 into the value section. 
-9. Under Settings, click on Add buildpack. Click on Python --> Saves Changes then click on nodejs --> Save Changes. They have to be in that order Python then nodejs.
+8. Under Settings, choose Congif Vars first. Enter PORT into the key section and 8000 into the value section. 
+9. Under Settings, click on Add buildpack. Click on Python --> Saves Changes, then click on nodejs --> Save Changes. They have to be in this order Python then nodejs.
 10. Now head to the Deploy tab. 
 11. Select in the Deplyment method: Github. Confirm to connect to Github. 
 12. Search for the repository to connect to. [Github Repository - apita1423](https://github.com/apita1423/libraryadventure-pp3).
@@ -163,14 +165,14 @@ I used the [CI Python Linter](https://pep8ci.herokuapp.com/) for test validation
 ![CI Python Linter](/assets/images/python_linter.png)
 
 ### Unfixed Bugs
-I took the Library Adventure title and book art from ASCII. Both the title and art made it within the 80 col rule, but there were trailing white spaces that I was not able to get rid off. When I tried it moved the symbols in a different directions. Puting it through the CI Python Linter, it does show the trailing whitespaces for that area. 
+I took the Library Adventure title and book art from ASCII. Both the title and art made it within the 80 col rule, but there were trailing white spaces that I was not able to get rid of. When I tried, it would moved the symbols in different directions. Puting the code through the CI Python Linter, it does show the trailing whitespaces for that area. 
 
 ---
 
 ## Credits
 
 ### Code Used
-Python was fun and I would like to continue creating other projects. But, I did have much help from the people of YouTube.
+I found python fun and I would like to continue creating other projects. But, I did have extra help from the people of YouTube.
 
 - Learn Learn Scratch Tutorials helped with the creation of the typewriter effect block of code.
 
@@ -193,6 +195,6 @@ Python was fun and I would like to continue creating other projects. But, I did 
 The Library Adventure story content was thought of by Amanda Pita, but the inspiration for the story came from reading countless fantasy stories. It sometimes helps to be a librarian. 
 
 ### Acknowledgments
-Again, I would like to give thanks to my husband. Who continues to encourage me to keep going forward. 
+Again, I would like to give thanks to my husband, who continues to encourage me to keep going forward. 
 
-As always, I'm extremely grateful to my mentor Martina who encourages me. The best mentor anyone can ask for!
+As always, I'm extremely grateful to my mentor Martina who encourages me every step of the way. The best mentor anyone can ask for!
