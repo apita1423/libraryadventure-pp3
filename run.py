@@ -16,8 +16,8 @@ def typewriter(effect):
 
 
 # ASCII title and book art. Iniital of book art creator is shown on the side
-# title() function starts the program.
-def title():
+# main_title() function starts the program.
+def main_title():
     print(r"""
   _      _ _                          
  | |    (_) |                         
@@ -91,7 +91,7 @@ def adventure_begins():
 # start_adventure() begins the game with a question following the back story.
 # It allows the user to type yes or no. If they type yes it continues to
 # the next part of the game. If they type no it gives them a adventure
-# over statement and takes the user back to the beginning (title()).
+# over statement and takes the user back to the beginning (main_title()).
 def start_adventure():
     print()
     typewriter("Do you accept the wizard's gift? (yes/no) ")
@@ -100,23 +100,25 @@ def start_adventure():
         print()
         answer = input("Type YES or NO: ").lower().strip()
         if answer == "yes":
-            quest()
+            start_quest()
+            break
         elif answer == "no":
             print(f"{Fore.RED}Adventure Over! You're back in the library!")
             time.sleep(4)
-            title()
+            main_title()
+            break
         else:
             print("Please type YES or No ")
             continue
 
 
-# quest() happens when the user has typed yes in the start_adventure()
+# start_quest() happens when the user has typed yes in the start_adventure()
 # question. Here the user is given a snippet of the rest of story with
 # a question at the end. The question allows for two answers 1 or 2.
 # If they chose the correct answer it prompts the next part of the story.
 # If the user chooses the wrong answer they get an adventure over statement
 # and a chance to play again.
-def quest():
+def start_quest():
     print()
     typewriter("Great! The crystal of the wizard's staff has been hidden \n")
     typewriter("by his familiar: a cat. The townspeople are doing their \n")
@@ -130,23 +132,25 @@ def quest():
         print()
         answer = input("Follow (1) or Fight (2): ").lower().strip()
         if answer == "1":
-            allies()
+            find_allies()
+            break
         elif answer == "2":
             print(f"{Fore.RED}You do not know how to use your powers yet. \n")
             print(f"{Fore.RED}You have died in battle!")
             adventure_over()
+            break
         else:
             print("Please chose 1 or 2")
             continue
 
 
-# allies() happens after the user input the correct answer in the quest()
-# function. The action here is the same as quest(). Continuing the story,
-# the user again needs to decide which choice they are going to pick. If the
-# user choses the right choice it prompts intentions(). If the user choses the
-# wrong answer, they are prompt with adventure over statement and a chance
-# to start over.
-def allies():
+# find_allies() happens after the user input the correct answer in the 
+# start_quest() function. The action here is the same as start_quest().
+# Continuing the story the user again needs to decide which choice
+# they are going to pick. If the user choses the right choice it prompts 
+# worthy_intentions(). If the user choses the wrong answer, they are prompt
+# with adventure over statement and a chance to start over.
+def find_allies():
     print()
     typewriter("Awesome! You chose to follow the cat and start your quest \n")
     typewriter("to Cassini's Temple. The cat has led you to the \n")
@@ -164,20 +168,22 @@ def allies():
             print(f"{Fore.RED}Adventure Over! \n")
             print(f"{Fore.RED}To win this battle you need allies.")
             adventure_over()
+            break
         elif answer == "2":
-            intentions()
+            worthy_intentions()
+            break
         else:
             print("Please chose 1 or 2")
             continue
 
 
-# intentions() is what comes after the correct answer was picked in allies().
-# It does the same has the previous codes. It continues the story and
-# the user needs to chose the correct answer. If correct answer is picked
-# it prompts the next part of the storyline. If the incorrect answer is
-# picked it gives them an adventure over statement and allows the user
-# to play again.
-def intentions():
+# worthy_intentions() is what comes after the correct answer was picked in
+# find_allies(). It does the same has the previous codes. It continues the
+# story and the user needs to chose the correct answer. If correct answer
+# is picked it prompts the next part of the storyline. If the incorrect
+# answer is picked it gives them an adventure over statement and allows
+# the user to play again.
+def worthy_intentions():
     print()
     typewriter("Great! You begin your journey through the Forgotten \n")
     typewriter("Forest. You start to find allies, but be careful with \n")
@@ -196,18 +202,20 @@ def intentions():
             print(f"{Fore.RED}Adventure Over! \n")
             print(f"{Fore.RED}Your intentions are not worthy.")
             adventure_over()
+            break
         elif answer == "2":
-            crystal()
+            power_crystal()
+            break
         else:
             print("Please choose 1 or 2")
             continue
 
 
-# crystal() is the continuing storyline from intentions(), if the user chose
-# the correct answer. It also gives two options to pick and if the wrong
-# answer is chosen it hints that the adventure is over and also prompts the
-# user if they want to play again.
-def crystal():
+# power_crystal() is the continuing storyline from worthy_intentions(),
+# if the user chose the correct answer. It also gives two options to pick
+# and if the wrong answer is chosen it hints that the adventure is over
+# and also prompts the user if they want to play again.
+def power_crystal():
     print()
     typewriter("The journey has been long and treacherous, but with the \n")
     typewriter("help of your allies, you have found Cassini's Temple. \n")
@@ -222,23 +230,25 @@ def crystal():
         print()
         answer = input("Restore magic (1) or Take the crystal's power (2): ")
         if answer == "1":
-            magic()
+            restored_magic()
+            break
         elif answer == "2":
             print(f"{Fore.RED}Greed has consumed you. \n")
             print(f"{Fore.RED}The power is too strong and you have died. \n")
             adventure_over()
+            break
         else:
             print("Please choose 1 or 2")
             continue
 
 
-# magic() is the last part of the storyline. The user's choice is different
-# here. Once they have reached the last part of the story they are asked if
-# they want to go on another adventure or go home. If they choose another
-# adventure they are prompted with a statement saying the adventure is brewing
-# (or in the making). If they chose to go home they are back at the beginning of
-# the game.
-def magic():
+# restored_magic() is the last part of the storyline. The user's choice is
+# different here. Once they have reached the last part of the story they
+# are asked if they want to go on another adventure or go home. If they
+# choose another adventure they are prompted with a statement saying the
+# adventure is brewing (or in the making). If they chose to go home they
+# are back at the beginning of the game.
+def restored_magic():
     print()
     typewriter("Hoorah! Together with your allies and the townspeople you \n")
     typewriter("have managed to kill the evil demons and bring peace \n")
@@ -254,14 +264,16 @@ def magic():
             typewriter("That's great! But, this adventure is in the \n")
             typewriter("middle of brewing.")
             time.sleep(4)
-            title()
+            main_title()
+            break
         elif answer == "2":
             typewriter("We will be here when you are ready to come back.")
             time.sleep(4)
-            title()
+            main_title()
+            break
         else:
             print("Please choose 1 or 2")
-            break
+            continue
 
 
 # adventure_over is a function used for when users pick the wrong answer.
@@ -279,14 +291,16 @@ def adventure_over():
         answer = input("Type YES or NO: \n").lower().strip()
         if answer == "yes":
             start_adventure()
+            break
         elif answer == "no":
             print(f"{Fore.RED}GAME OVER!")
             time.sleep(4)
-            title()
+            main_title()
+            break
         else:
             print("Type YES or NO")
-            break
+            continue
 
 
-# title() calls the function to start the game
-title()
+# main_title() calls the function to start the game
+main_title()
