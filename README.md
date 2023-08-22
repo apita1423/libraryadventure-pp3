@@ -49,10 +49,10 @@ Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 ## Design
 
 ### Colour Scheme
-I used the Colorama module as a way to colour my text in the Python terminal. The Library Adenture title has stayed white because I wanted the title to pop especially with the black background. The book ASCII art is red due to the story mentioning a red book. "Please enter your name:" is yellow as well as when the user puts in their name or not. When the user inputs the wrong answer, the prompt is red. When the user is asked if they want to play again, the "Play Again?" is in green. 
+I used the Colorama module as a way to colour my text in the Python terminal. The Library Adenture title has stayed white because I wanted the title to pop especially with the black background. The book ASCII art is red due to the story mentioning a red book. "Please enter your name:" is yellow as well as when the user puts in their name or decides not to. When the user inputs the wrong answer, the prompt they receive is red. When the user is asked if they want to play again, the "Play Again?" is in green. 
 
 ### Imagery 
-With talking about libraries and books, of course, I wanted to add an image of book. The ASCII book art is was a great choice, because of one book on it's side. It is like that one is the one that catches the players eyes. 
+Talking about libraries and books, of course, I wanted to add an image books. The ASCII book art was a great choice, especially with one book on it's side. It is like that book is the one that catches the players eyes. 
 ---
 
 ## Features
@@ -89,7 +89,6 @@ I used [Lucid Chart](https://lucid.app/) to create my story flow for the text-ba
 - [ASCII Art Title](https://patorjk.com/software/taag/#p=display&f=Big&t=%0A) - Used to create the Library Adventure title.
 - [Lucid Chart](https://lucid.app) - Used to create the flowchart for the flow of the story. 
 
-
 ---
 
 ## Deployment
@@ -97,13 +96,23 @@ Library Adventure has been deployed through Heroku.
 
 - Click Here for the live site: [Library Adventure]()
 
-Instructions on how to deploy on Heroku:
+Instructions on how to deploy on [Heroku](https://www.heroku.com):
 
-1. Login to Github.
-2. On the left navigation menu, click on your respository. [Github Repository - apita1423](https://github.com/apita1423/libraryadventure-pp3).
-3. Click on Settings.
-4. Click on Pages on the left navigation menu.
-5. Click on the dropdown menu under Branch and select main and hit Save (this process might take a few minutes).
+1. Login to Heroku.
+2. Once set up a multifactor authentication needs to be approved.
+3. On your Dashboard, click on the Create new app button.
+4. Now enter a name in the App name. Each name is unique. Once enter, a green checkmark should appear if its valid.
+5. Choose a region: United States or Europe (depending where you are located). Then click on the Create app button.
+6. After clicking on the Create app button, the updated Dashboard has a few tabs listed. Two tabs that needs to be updated is Deploy and Settings.
+7. Settings will be first. 
+8. Under Settings, chose Congif Vars first. Enter PORT into the key section and 8000 into the value section. 
+9. Under Settings, click on Add buildpack. Click on Python --> Saves Changes then click on nodejs --> Save Changes. They have to be in that order Python then nodejs.
+10. Now head to the Deploy tab. 
+11. Select in the Deplyment method: Github. Confirm to connect to Github. 
+12. Search for the repository to connect to. [Github Repository - apita1423](https://github.com/apita1423/libraryadventure-pp3).
+13. When the repository is chosen, click connect. 
+14. Two ways that the project can be deployed: manual or automatic. 
+15. If automatic deploy is chosen, it will deploy when the code is pushed. For manual deploy, the Deploy Branch button has to be click for the code that was pushed to be deployed.
 
 ---
 
@@ -124,9 +133,9 @@ I took the Library Adventure title and book art from ASCII. Both the title and a
 ### Code Used
 Python was fun and I would like to continue creating other projects. But, I did have much help from the people of YouTube.
 
-[Learn Learn Scratch Tutorials YouTube](https://www.youtube.com/watch?v=2h8e0tXHfk0&t=134s)
-
 - Learn Learn Scratch Tutorials helped with the creation of the typewriter effect block of code.
+
+[Learn Learn Scratch Tutorials YouTube](https://www.youtube.com/watch?v=2h8e0tXHfk0&t=134s)
 
 - Bro Code was a awesome source to go over Python. 
 
@@ -142,7 +151,7 @@ Python was fun and I would like to continue creating other projects. But, I did 
 
 ### Content
 
-The Library Adventure story was thought of by Amanda Pita, but the inspiration for the story came from reading countless fantasy stories. It sometimes helps to be a librarian. 
+The Library Adventure story content was thought of by Amanda Pita, but the inspiration for the story came from reading countless fantasy stories. It sometimes helps to be a librarian. 
 
 ### Acknowledgments
 Again, I would like to give thanks to my husband. Who continues to encourage me to keep going forward. 
