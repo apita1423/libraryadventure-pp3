@@ -3,6 +3,8 @@ Library Adventure is my third project for Code Insitiute. The idea came from alw
 
 Text-based adventure have come a long way, but there something nostalgic when seeing the white blinking button waiting for your next move. So, I combined the two ideas of jumping into a book and going on adventure, but like they did in the olden days. 
 
+![Library Adventure Title Image](/assets/images/library_adventure.PNG)
+
 Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 
 ---
