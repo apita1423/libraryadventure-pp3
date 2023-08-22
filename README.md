@@ -5,7 +5,7 @@ Text-based adventure have come a long way, but there is something nostalgic when
 
 ![Library Adventure Title Image](/assets/images/library_adventure.PNG)
 
-Library Adventure is Live! Visit [Here](). Have a great adventure!
+Library Adventure is Live! Visit [Here](https://libraryadventure-pp3-d1fd4cb0c715.herokuapp.com/). Have a great adventure!
 
 ---
 
@@ -135,7 +135,7 @@ I used [Lucid Chart](https://lucid.app/) to create my story flow for the text-ba
 ## Deployment
 Library Adventure has been deployed through Heroku.
 
-- Click Here for the live site: [Library Adventure]()
+- Click Here for the live site: [Library Adventure](https://libraryadventure-pp3-d1fd4cb0c715.herokuapp.com/)
 
 Instructions on how to deploy on [Heroku](https://www.heroku.com):
 
