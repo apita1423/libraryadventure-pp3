@@ -75,24 +75,23 @@ def story_begins():
 def adventure_begins():
     print()
     typewriter("Let the adventure begin... \n")
-    print()
-    typewriter("As you walk through the aisle of books, a red book catches \n")
-    typewriter("your eye. You pick it up and skim through, not realising \n")
-    typewriter("that it's a magical book and that it has picked you for a \n")
-    typewriter("reason. You decide to sit down and begin to read the book. \n")
-    typewriter("As you read the book, the library starts to disappear. \n")
-    typewriter("You find yourself in a magical land and face-to-face with \n")
-    typewriter("a wizard. The wizard has been hurt in a battle to bring \n")
-    typewriter("magic back to the land. The wizard senses your powers \n")
-    typewriter("growing and gives you his powers.")
+    typewriter("As you walk through the aisle of books, a red book \n")
+    typewriter("catches your eye. You pick it up and skim through it, not \n")
+    typewriter("realising that it's a magical book and that it has picked \n")
+    typewriter("you for a reason. As you read the book, the library \n")
+    typewriter("starts to disappear. You find yourself in a magical \n")
+    typewriter("land and face-to-face with a wizard. The wizard has  \n")
+    typewriter("been hurt in a battle to bring magic back to the land. \n")
+    typewriter("The wizard senses your powers growing and gives you \n")
+    typewriter("his powers.")
     print()
     start_adventure()
 
 
 # start_adventure() begins the game with a question following the back story.
 # It allows the user to type yes or no. If they type yes it continues to
-# the next part of the game. If they press no it gives them a adventure
-# over statement and takes the user back to the beginning.
+# the next part of the game. If they type no it gives them a adventure
+# over statement and takes the user back to the beginning (title()).
 def start_adventure():
     print()
     typewriter("Do you accept the wizard's gift? (yes/no) ")
@@ -133,8 +132,8 @@ def quest():
         if answer == "1":
             allies()
         elif answer == "2":
-            print(f"{Fore.RED}You do not know how to use your power yet. \n")
-            print(f"{Fore.RED}You have died!")
+            print(f"{Fore.RED}You do not know how to use your powers yet. \n")
+            print(f"{Fore.RED}You have died in battle!")
             adventure_over()
         else:
             print("Please chose 1 or 2")
@@ -144,7 +143,7 @@ def quest():
 # allies() happens after the user input the correct answer in the quest()
 # function. The action here is the same as quest(). Continuing the story,
 # the user again needs to decide which choice they are going to pick. If the
-# user choses the right choice it prompts intentions. If the user choses the
+# user choses the right choice it prompts intentions(). If the user choses the
 # wrong answer, they are prompt with adventure over statement and a chance
 # to start over.
 def allies():
