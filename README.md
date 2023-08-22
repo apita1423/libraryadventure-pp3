@@ -1,5 +1,7 @@
 # Library Adventure
-Library Adventure is a text-based adventure game. The player is someone visitng the library and notices a book on the shelf. The players start reading and is transported to a far way land where the players meets a wizard. The player is given two choices through the storyline and with every correct answer he is 
+Library Adventure is my third project for Code Insitiute. The idea came from always enjoying the thought of jumping into a book that you love and experiencing the world and sometimes living through the adventure of the story. 
+
+Text-based adventure have come a long way, but there something nostalgic when seeing the white blinking button waiting for your next move. So, I combined the two ideas of jumping into a book and going on adventure, but like they did in the olden days. 
 
 Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 
@@ -34,7 +36,6 @@ Library Adventure is Live!  Visit [Here]().  Have a great adventure!
 * [Credits](#credits)
     * [Code Used](#code-used)
     * [Content](#content)
-    * [Media](#media)
     * [Acknowledgments](#acknowledgments)
 
 ---
@@ -53,6 +54,7 @@ I used the Colorama module as a way to colour my text in the Python terminal. Th
 
 ### Imagery 
 Talking about libraries and books, of course, I wanted to add an image books. The ASCII book art was a great choice, especially with one book on it's side. It is like that book is the one that catches the players eyes. 
+
 ---
 
 ## Features
@@ -62,7 +64,7 @@ Talking about libraries and books, of course, I wanted to add an image books. Th
 ### Flow Chart
 I used [Lucid Chart](https://lucid.app/) to create my story flow for the text-based adventure game. 
 
-![Library Adventure Flow Chart](/readme-images/flowchart.png)
+![Library Adventure Flow Chart](/assets/images/flowchart.png)
 
 ### Future Implementations
 
@@ -102,7 +104,7 @@ Instructions on how to deploy on [Heroku](https://www.heroku.com):
 2. Once set up a multifactor authentication needs to be approved.
 3. On your Dashboard, click on the Create new app button.
 4. Now enter a name in the App name. Each name is unique. Once enter, a green checkmark should appear if its valid.
-5. Choose a region: United States or Europe (depending where you are located). Then click on the Create app button.
+5. Choose a region: United States or Europe (depending on location). Then click on the Create app button.
 6. After clicking on the Create app button, the updated Dashboard has a few tabs listed. Two tabs that needs to be updated is Deploy and Settings.
 7. Settings will be first. 
 8. Under Settings, chose Congif Vars first. Enter PORT into the key section and 8000 into the value section. 
@@ -121,7 +123,7 @@ Instructions on how to deploy on [Heroku](https://www.heroku.com):
 ### Testing Validation 
 I used the [CI Python Linter](https://pep8ci.herokuapp.com/) for test validation.
 
-![CI Python Linter](/readme-images/python_linter.png)
+![CI Python Linter](/assets/images/python_linter.png)
 
 ### Unfixed Bugs
 I took the Library Adventure title and book art from ASCII. Both the title and art made it within the 80 col rule, but there were trailing white spaces that I was not able to get rid off. When I tried it moved the symbols in a different directions. Puting it through the CI Python Linter, it does show the trailing whitespaces for that area. 
